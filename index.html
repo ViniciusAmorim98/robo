@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robô da LOTO Inteligência artificial para loterias</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <style>
+        #countdown {
+            font-size: 50px;
+
+            display: flex;
+            gap: 10px;
+
+            color: white;
+
+        }
+
+        .hours,
+        .minutes,
+        .seconds {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            color: #c4170c;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 80px;
+            height: 80px;
+        }
+
+
+        /*perguntas frequentes*/
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .accordion-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .accordion-question {
+            background-color: #f4f4f4;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .accordion-answer {
+            padding: 10px;
+            display: none;
+            padding: 10px;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--inicio top-->
+    <div id="top">
+        <span>CNB</span>
+    </div>
+    <!--final top-->
+
+    <!--inicio titulo-->
+    <section id="titulo">
+        <div class="container cont-titulo">
+            <div class="conteudo">
+                <h1>
+                    Você já imaginou acertar 14 pontos com apenas 14 JOGOS na Lotofácil e outras LOTERIAS ?
+                </h1>
+
+                <p>
+                    Uma plataforma completa com inteligência artificial Que te GARANTE 14 e até 15 Pontos com apenas 14
+                    Bilhetes.
+                    Hoje você poderá se tornar um apostador PROFISSIONAL!
+                </p>
+
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/734988690?h=191d3a76d6" width="640"
+                    height="360" frameborder="0" allowfullscreen>
+                </iframe>
+
+                <a target="_blank" href="https://ev.braip.com/checkout/pla39om2/che2ewnd?currency=BRL"><span
+                        id="btn-1">COMPRAR AGORA</span> <br> <span id="sub-btn">+BÔNUS para as 30 primeiras
+                        compras</span></a>
+
+                <p class="oferta">
+                    ESTA OFERTA PODE SAIR DO AR A QUALQUER MOMENTO, APROVEITE!
+                </p>
+
+            </div>
+
+            <div class="anuncio-1">
+                <img src="img/anuncio.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--final titullo-->
+
+
+    <!--section tempo-->
+    <section id="tempo">
+        <div class="container container-tempo">
+            <h2>Esta oferta termina em:</h2>
+            <div id="countdown">
+                <span class="hours">00</span> :
+                <span class="minutes">00</span> :
+                <span class="seconds">00</span>
+            </div>
+        </div>
+    </section>
+    <!--fim da section tempo-->
+
+    <!--modalidades-->
+    <section id="modalidade">
+        <div class="container">
+            <h2>Modalidades Disponíveis:</h2>
+
+            <div class="container-modalidade">
+                <div class="modalidade-card">
+                    <img src="img/bingo.jpg" alt="">
+                    <span>Bingo</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/lotofacil.jpg" alt="">
+                    <span>Lotofácil</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/megasena.jpg" alt="">
+                    <span>Mega-Sena</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/super7.jpg" alt="">
+                    <span>Super sete</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/quina.jpg" alt="">
+                    <span>Quina</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/lotomania.jpg" alt="">
+                    <span>Lotomania</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/duplasena.jpg" alt="">
+                    <span>Dupla Sena</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/timemania.jpg" alt="">
+                    <span>Timemania</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/diadasorte.jpg" alt="">
+                    <span>Dia da sorte</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/loteca.jpg" alt="">
+                    <span>Loteca</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/jogodobicho.jpg" alt="">
+                    <span>Jogo do Bicho</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/bolao.jpg" alt="">
+                    <span>Bolão</span>
+                </div>
+
+                <div class="modalidade-card">
+                    <img src="img/outros.jpg" alt="">
+                    <span>ENTRE OUTROS JOGOS INTERNOS...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fim da modalidades-->
+
+    <!--section bonus-->
+    <section id="bonus">
+        <div class="container">
+
+            <div class="container-bonus">
+                <div class="bonus-txt">
+                    <h2>Bônus Especiais</h2>
+                    <p>
+                        São 5 super bônus, incluindo o novo <span class="bold">Rastreador de Tendências da Lotofácil e o
+                            BOLÃO
+                            INTERNO</span> que,
+                        por si só, já vale todo o investimento! O rastreador é atualizado automaticamente e analisa os
+                        últimos 100 concursos para gerar estatísticas reais e precisas sobre a volatilidade dos números
+                        sorteados, análise de pares, ímpares, repetências, números quentes e frios.
+                    </p> <br>
+
+                    <p>
+                        <span class="bold">Atenção:</span> <br> Os bônus estão disponíveis somente nas compras
+                        realizadas HOJE !
+                        (sim, termina HOJE) ou até acabar a quantidade de licenças disponíveis.
+                    </p>
+                </div>
+
+                <div class="bonus-img">
+                    <img src="img/bonus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--final section bonus-->
+
+    <!--section comentarios-->
+    <section id="comentarios">
+        <div class="container">
+            <img id="coment-pc" src="img/comentarios.png" alt="">
+            <img id="coment-mbl" src="img/comentarios-mb.png" alt="">
+        </div>
+    </section>
+    <!--final section comentarios-->
+
+    <!--seção 04 (perguntas frequntes)-->
+    <section id="perguntas-frequentes">
+
+        <div class="faq-container">
+            <div class="sub-cont-04">
+                <h2>PERGUNTAS FREQUENTES</h2>
+
+            </div>
+            <div class="accordion container">
+                <div class="accordion-item">
+                    <div class="accordion-question"
+                        style=" background-color: #c4170c; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <p class="pergunta" style="margin: 0; color: white; font-weight: bold;">
+                            1. Como posso ter certeza que o Robô da LOTO funciona?
+                        </p>
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-answer">Este é o sistema mais fácil, rápido e seguro de fazer 14 pontos na
+                        Lotofácil. Confiamos tanto nisso que devolvemos o seu dinheiro, caso você não acerte 14 pontos
+                        ao errar 5 números, basta nos enviar uma única mensagem através da área de suporte dentro do
+                        sistema.
+                    </div>
+                </div>
+                <!-- Adicione mais perguntas e respostas aqui -->
+
+                <div class="accordion-item">
+                    <div class="accordion-question"
+                        style="  background-color: #c4170c; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <p class="pergunta" style="  color: white; font-weight: bold; margin: 0;">
+                            2. Como vou receber o Robô da LOTO?
+                        </p>
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-answer">Logo após o pagamento, você recebe automaticamente um e-mail com a sua
+                        senha para acessar o produto.
+                        <br><br>
+
+                        Em relação ao número de funcionários, o MEI pode ter apenas um funcionário, que deve receber um
+                        salário mínimo ou o piso salarial da categoria. É importante ressaltar que, independentemente de
+                        ser uma microempresa, o contrato de trabalho desse funcionário deve ser formalizado e cumprir
+                        com todas as obrigações trabalhistas e previdenciárias.
+
+                    </div>
+                </div>
+                <!-- Adicione mais perguntas e respostas aqui -->
+
+                <div class="accordion-item">
+                    <div class="accordion-question"
+                        style=" background-color: #c4170c; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <p class="pergunta" style="margin: 0 ;  color: white; font-weight: bold;">
+                            3. Funciona no celular?
+                        </p>
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-answer">Sim, funciona no celular, computador e tablet. Possuimos Aplicativo
+                        direto da PlayStore, Tudo é sincronizado, ou seja, o que você fizer no celular também fica salvo
+                        e disponível quando você acessar pelo computador e vice-versa.
+
+                    </div>
+                </div>
+                <!-- Adicione mais perguntas e respostas aqui -->
+
+                <div class="accordion-item">
+                    <div class="accordion-question"
+                        style=" background-color: #c4170c; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <p class="pergunta" style="margin: 0;  color: white; font-weight: bold;">
+                            4. Posso utilizar o Robô da LOTO para sempre?
+                        </p>
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-answer">Sim, o acesso é vitalício. Pode utilizar quantas vezes você quiser,
+                        sem limites e sem nenhuma restrição.
+
+                    </div>
+                </div>
+                <!-- Adicione mais perguntas e respostas aqui -->
+
+                <div class="accordion-item">
+                    <div class="accordion-question"
+                        style=" background-color: #c4170c; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <p class="pergunta" style="margin: 0;  color: white; font-weight: bold;">
+                            5. O pagamento é seguro?
+                        </p>
+                        <span>
+                            <i style="color: white;" class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-answer">
+                        <P>
+                            Sim, tanto o pagamento quanto a compra são seguros, pois os dados são criptografados. O
+                            pagamento é processado pela maior plataforma de produtos digitais do Brasil.
+                        </P>
+
+                    </div>
+                </div>
+                <!-- Adicione mais perguntas e respostas aqui -->
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--fim da seção 04 (perguntas frequentes)-->
+
+
+    <!--depoimentos-->
+    <section id="depoimentos">
+        <div class="container">
+            <h2>Faça como centenas de pessoas que já compraram o Robô da LOTO e ganharam</h2>
+
+            <p>
+                Estes são apenas alguns comprovantes e depoimentos reais de apostadores que já usaram o sistema e
+                ganharam!
+            </p>
+
+            <div class="container-dep">
+                <img src="img/dep-1.png" alt="">
+                <img src="img/dep-2.png" alt="">
+                <img src="img/dep-3.png" alt="">
+                <img src="img/dep-4.png" alt="">
+                <img src="img/dep-5.png" alt="">
+                <img src="img/dep-6.png" alt="">
+                <img src="img/dep-7.png" alt="">
+                <img src="img/dep-8.png" alt="">
+            </div>
+        </div>
+
+
+        <a target="_blank" href="https://ev.braip.com/checkout/pla39om2/che2ewnd?currency=BRL"><span id="btn-1">COMPRAR
+                AGORA</span> <br> <span id="sub-btn">+BÔNUS para as 30
+                primeiras
+                compras</span></a>
+    </section>
+    <!--final depoimentos-->
+
+
+    <!--selos-->
+    <section id="selos">
+        <div class="container container-selo">
+            <img src="img/selos.png" alt="">
+        </div>
+    </section>
+    <!--final selos-->
+
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <p>
+                2024 &copy; Robô da LOTO Todos os direitos reservados
+            </p>
+
+            <a href="">Termos de uso</a> | <a href="">Política de privacidade</a> | <a href="">7 dias grantia
+                condicional</a>
+
+
+            <p style="margin-top: 15px;">
+                Atenção: ao abordar questões financeiras fazemos todos os esforços para garantir que estes representem
+                fielmente nosso produto. No entanto, os resultados podem variar de pessoa para pessoa e não garantimos
+                que você ganhará dinheiro usando qualquer uma de nossas ideias, ferramentas ou estratégias e nada em
+                nosso site é uma promessa ou garantia de resultado.
+            </p>
+        </div>
+    </footer>
+    <!--fianl footer-->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Data de início do contador
+            const startDate = new Date();
+
+            // Adiciona 3 horas à data de início
+            startDate.setHours(startDate.getHours() + 3);
+
+            // Função para atualizar o contador
+            function updateCountdown() {
+                const currentDate = new Date();
+                const difference = startDate - currentDate;
+
+                // Calcula o tempo restante em horas, minutos e segundos
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                // Exibe o contador atualizando os elementos correspondentes
+                document.querySelector(".hours").textContent = hours.toString().padStart(2, '0');
+                document.querySelector(".minutes").textContent = minutes.toString().padStart(2, '0');
+                document.querySelector(".seconds").textContent = seconds.toString().padStart(2, '0');
+
+                // Atualiza o contador a cada segundo
+                setTimeout(updateCountdown, 1000);
+            }
+
+            // Inicializa o contador
+            updateCountdown();
+        });
+
+
+        //perfuntas frequentes
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const question = item.querySelector('.accordion-question');
+                const answer = item.querySelector('.accordion-answer');
+
+                question.addEventListener('click', function () {
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
